@@ -21,13 +21,22 @@
   
 </p>
 
+
 <h1 align="center">
 The Open-Source Copilot Platform
 </h1>
 
 <h3 align="center">
-In-app chatbots, and AI-enabled TextArea.
+in-app chatbots, and AI-enabled Textareas.
 </h3>
+
+<div align="center">
+  <picture>
+    <img alt="Backed by Techstars" src="https://github.com/CopilotKit/CopilotKit/assets/746397/a5029e89-0986-4dfc-bbd6-61d18944ae59" width="150px" max-width="100%"/>
+  </picture>
+  </a>
+</div>
+
 
 <p align="center">
   <br />
@@ -53,7 +62,7 @@ In-app chatbots, and AI-enabled TextArea.
 
 
 <div align="center">
-  <img src="https://github.com/CopilotKit/CopilotKit/assets/746397/1aa17608-46a5-4e2f-aad5-19c8f5c5f1bd" height="220px" style="border-radius: 35px;">
+  <img src="https://github.com/CopilotKit/CopilotKit/assets/746397/1aa17608-46a5-4e2f-aad5-19c8f5c5f1bd" width="900px" max-width="100%" style="border-radius: 35px;">
 </div>
 <br/>
 
@@ -70,6 +79,15 @@ Starting with React. Use any LLM. <br/>
 Combines frontend SDKs, backend SDKs, and (optional) cloud infrastructure. Open-source 🪁
 
 
+## Installation
+
+```bash
+npm i @copilotkit/react-core @copilotkit/react-ui @copilotkit/react-textarea
+```
+
+
+## Getting started
+See quickstart in the [docs](https://docs.copilotkit.ai)
 
 
 ## 🎯 Features Overview
@@ -80,7 +98,7 @@ Combines frontend SDKs, backend SDKs, and (optional) cloud infrastructure. Open-
 - ✅ AI editing ✨ - "list the client's top 3 pain points from the last call using @SalesforceData"
 - 🟩 Generate from scratch ✨ - automatically populate the initial content based on given context
 - ✅ App context & 3rd party context with `useMakeCopilotReadable` and `useMakeCopilotDocumentReadable`
-- ✅ Fully custsomizable prompt engineering
+- ✅ Fully customizable prompt engineering
 - 🟩 Arbitrary LLM chains.
 - 🟩 Bold + italics.
 
@@ -104,14 +122,8 @@ Combines frontend SDKs, backend SDKs, and (optional) cloud infrastructure. Open-
 https://github.com/CopilotKit/CopilotKit/assets/746397/b0cdf38b-ec5c-4e95-8623-364bafb70907
 
 
-## Installation
 
-```bash
-npm i @copilotkit/react-core @copilotkit/react-ui @copilotkit/react-textarea
-```
 
-## Getting started
-See quickstart in the [docs](https://docs.copilotkit.ai)
 
 
 ## Examples
@@ -226,7 +238,7 @@ function Department(props: DepartmentProps): JSX.Element {
   // Let the copilot take action on behalf of the user.
   useMakeCopilotActionable(
     {
-      name: "setEmployeesAsSelected",
+      name: "setEmployeesAsSelected", // no spaces allowed in the function name
       description: "Set the given employees as 'selected'",
       argumentAnnotations: [
         {
